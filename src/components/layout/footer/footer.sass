@@ -1,2 +1,31 @@
 footer
     width: 100%
+    .panel
+        position: relative
+        margin-bottom: -100px
+        @media screen and ( max-width: 575px )
+            margin-bottom: -90px
+        &-body
+            p
+                font-weight: 400
+                font-size: 14px
+                color: #454F5B
+                a
+                    font-weight: 700
+    .footer_bot
+        background: url(../images/line_footer.png)
+        background-repeat: no-repeat
+        height: 131px
+        background-size: contain
+        background-position: bottom
+        background-size: 100% 35px
+        .ft_right
+            background: url(../images/logo_footer_right.png)
+            background-repeat: no-repeat
+            height: 130px
+            background-size: contain
+            background-position: bottom
+            width: 170px
+            float: right
+            @media screen and ( max-width: 575px )
+                width: 80px

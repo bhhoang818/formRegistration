@@ -39,11 +39,16 @@
                 &::before
                     width: 100%
     &-default
+        display: flex
+        align-items: center
+        justify-content: center
         position: relative
-        background: linear-gradient(180deg, #F9DD0B 0%, rgba(252, 168, 24, 0.97) 100%)
-        border-radius: 8px
-        width: 100%
-        padding: 15px 0
+        background: #FFD643
+        // background: linear-gradient(180deg, #F9DD0B 0%, rgba(252, 168, 24, 0.97) 100%)
+        border-radius: 50px
+        width: 168px
+        padding: 16px 24px
+        gap: 10px
         span
             position: relative
             font-weight: 700
@@ -57,28 +62,30 @@
             transition: 0.2s 0.1s
             z-index: 100
 
-        &::before
-            position: absolute
-            top: 0
-            bottom: 0
-            left: 0
-            height: 100%
-            width: 0
-            border-radius: 8px
-            background: linear-gradient(0deg, #BE1128 0%, #EB2629 152.65%)
-            transition: 0.3s ease-out
-            content: ''
+        // &::before
+        //     position: absolute
+        //     top: 0
+        //     bottom: 0
+        //     left: 0
+        //     height: 0
+        //     width: 100%
+        //     border-radius: 50px
+        //     background: linear-gradient(0deg, #BE1128 0%, #EB2629 152.65%)
+        //     transition: 0.3s ease-out
+        //     content: ''
 
         @media screen and ( min-width: 1025px )
             &:hover
-                span,
-                em
-                    color: #fff
-                img
-                    filter: brightness(0) invert(1)
-                    transition: all ease-in-out .3s
-                &::before
-                    width: 100%
+                background: linear-gradient(180deg, #F9DD0B 0%, rgba(252, 168, 24, 0.97) 100%)
+                // span,
+                // em
+                //     color: #fff
+                // img
+                //     filter: brightness(0) invert(1)
+                //     transition: all ease-in-out .3s
+                // &::before
+                //     height: 100%
+                //     border-radius: 50px
 
     &-search
         padding: 4px 8px 4px 6px

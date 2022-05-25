@@ -1,13 +1,13 @@
 header
-    position: fixed
-    z-index: 1000
+    position: relative
     width: 100%
     padding: 8px 0
+    transform: translateY(0)
     .navbar
         .navbar-collapse
             justify-content: space-between
             .navbar-brand
-                width: 223px
+                width: 179px
             .navbar-nav
                 padding: 17px 24px
                 gap: 32px
@@ -43,3 +43,12 @@ header
                         color: #212B36
                     &:last-child
                         color: #BE1128
+    @media screen and ( max-width: 575px )
+        .navbar
+            .navbar-collapse
+                .navbar-brand
+                    width: 100px
+                .nav-button
+                    p
+                        font-size: 14px
+                        line-height: 16px
