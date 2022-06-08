@@ -2,24 +2,18 @@ section.hero-section
     .container 
         .panel
             .panel-heading.text-center 
-                h1.section-title.mb-4 Đăng ký ngay
-                p.small-title.mb-4 Vui lòng nhập thông tin của Quý khách để tiếp tục đăng ký 
+                .image-icon
+                    img(src="./images/congratulations.svg", alt="")
+                h1.section-title.mb-4 Chúc mừng quý khách được tặng thẻ VIP
+                p.small-title.mb-4 Vui lòng nhập số điện của Quý khách để nhận thẻ 
             .panel-body
                 form.wrap-form(action="") 
                     .row 
-                        .form-group.col-xl-6.mb-3
-                            label.mb-3(for='name') Họ và tên Quý khách
-                            input.form-control(type='name', name='name' placeholder='Nhập họ và tên')
-                        .form-group.col-xl-6.mb-3
+                        .form-group.col-xl-12.mb-3
                             label.mb-3(for='name') Số điện thoại
-                            input.form-control(type='name', name='name' placeholder='Nhập số điện thoại')
-                        .form-group.col-xl-6.mb-3
-                            label.mb-3(for='name') Số CMND hoặc thẻ CCCD
-                            input.form-control(type='name', name='name' placeholder='Nhập số CMND hoặc thẻ CCCD')
-                        .form-group.col-xl-6.mb-3
-                            label.mb-3(for='name') Email
-                            input.form-control(type='name', name='name' placeholder='Nhập email')
-                        button.btn.btn-default
-                            img(src="./images/send.png", alt="")
-                            span.ms-2 GỬI
+                            input.form-control(type='name', name='name' placeholder='Nhập số điện thoại' value='')
+                        .form-group.col-xl-12
+                            a.btn.btn-default(href="/verify.html") 
+                                img(src="./images/right.svg", alt="")
+                                span.ms-2 TIẾP TỤC
     

@@ -2,13 +2,19 @@
     position: relative
     transform: translateY(-120px)
     .panel
-        padding: 40px 16px 24px
+        padding: 24px 40px
         background: #FFFFFF
         border-radius: 8px
+        max-width: 600px
         width: 100%
+        margin: 0 auto
         &-heading
             padding: 0 15px
             .small-title
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                text-align: center
                 color: #454F5B
             .mess-icon
                 width: 150px
@@ -39,23 +45,36 @@
                             color: #A4A4A4
                 .btn-default
                     margin: 24px auto 0
-    @media(min-width: 576px)
-        .panel
-            width: 540px
-            padding: 40px 105px 24px
-    @media (min-width: 768px)
-        .panel
-            width: 720px
-    @media(min-width: 992px)
-        .panel
-            width: 960px
-    @media(min-width: 1230px)
-        .panel
-            width: 1110px
-    @media(min-width: 1400px)
-        .panel
-            width: 1244px
+            ul
+                display: flex
+                flex-direction: column
+                gap: 8px
+                li
+                    position: relative
+                    p
+                        font-weight: 400
+                        font-size: 14px
+                        line-height: 22px
+                        color: #363636
+                        padding-left: 18px
+                        span
+                            font-weight: 700
+                    &::before
+                        content: ''
+                        position: absolute
+                        left: 0
+                        top: 50%
+                        transform: translateY(-50%)
+                        width: 12px
+                        height: 12px
+                        border-radius: 50%
+                        background: #FFC20E
+
     @media screen and ( max-width: 1024px )
         transform: translateY(-100px)
     @media screen and ( max-width: 575px )
         transform: translateY(-80px)
+        .panel
+            padding: 40px 16px
+            &-heading
+                padding: 0

@@ -2,11 +2,21 @@ section.hero-section
     .container 
         .panel
             .panel-heading.text-center.mb-4 
-                .mess-icon.m-auto 
-                    img(src="./images/check.svg", alt="")
+                h1.section-title.mb-4 Thông tin thẻ
+                p.small-title.mb-4 Vui lòng kiểm tra thông tin nhận thẻ của quý khách
             .panel-body
-                h1.section-title.mb-4 Đăng ký thành công
-                p.small-title.text-center.mb-5 Thông tin đăng ký của Quý khách đã được gửi thành công, chúng tôi sẽ liên hệ sớm nhất
-                a.btn.btn-default.m-auto(href="") 
-                    img(src="./images/close.svg", alt="")
-                    span.ms-2 ĐÓNG
+                ul.mt-5.mb-5 
+                    li 
+                        p  Tên thẻ: 
+                            span NGUYEN HOANG ANH KHOA
+                    li 
+                        p  Số thứ tự thẻ: 
+                            span 02365
+                a.btn.btn-default.m-auto(href="" data-fancybox data-src='#warring') 
+                    img(src="./images/doneall.svg", alt="" )
+                    span.ms-2 NHẬN THẺ
+                a.btn.btn-default.m-auto.mt-3(href="" data-fancybox data-src='#verify') 
+                    img(src="./images/doneall.svg", alt="" )
+                    span.ms-2 NHẬN THẺ
+include ../popup/warring.pug
+include ../popup/vipcard.pug
